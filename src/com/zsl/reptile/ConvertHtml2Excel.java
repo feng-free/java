@@ -111,11 +111,11 @@ public class ConvertHtml2Excel {
 				captureCellSize = getCaptureCellSize(rowIndex, i, crossRowEleMetaLs);
 			}
 			Element thEle = tdLs.get(eleIndex);
-			String val = thEle.getTextTrim();
+			String val = thEle.getStringValue();
 			if (StringUtils.isBlank(val)) {
 				Element e = thEle.element("a");
 				if (e != null) {
-					val = e.getTextTrim();
+					val = e.getStringValue();
 				}
 			}
 			HSSFCell c = row.createCell(i);
