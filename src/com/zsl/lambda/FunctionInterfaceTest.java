@@ -8,11 +8,6 @@ package com.zsl.lambda;
 
 public class FunctionInterfaceTest {
 	
-	public static void main(String[] args){
-		test();
-		testLambda();
-	}
-	
     public static void test() {
 		boolean b = func(new FunctionInterface<Integer>() {
 			@Override
