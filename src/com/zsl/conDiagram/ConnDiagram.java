@@ -7,22 +7,13 @@ package com.zsl.conDiagram;
  **/
 
 public class ConnDiagram {
-	
-	
-	public static void main(String[] args) {
-		String gram = "s--1:2--3--4:5--t,1--4,2--5";
-		for(int i = 1; i <= 5; i++){
-			System.out.println(""+i+"去掉后："+getConnDiagram(""+i+"",gram));
-		}
-	}
-	
 	/**
 	 * @Author 张双亮
 	 * @Description 通过删除某一结点获取删除节点后的连接图
 	 * @Param $param
 	 * @return $return
 	 **/
-	private static String getConnDiagram(String v,String gram){
+	public static String getConnDiagram(String v,String gram){
 		String str = "";
 		boolean b = isNotNull(v,gram);
 		if(!b){
